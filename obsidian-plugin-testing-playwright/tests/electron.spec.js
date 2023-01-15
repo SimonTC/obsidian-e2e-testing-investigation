@@ -16,14 +16,14 @@ test('has title', async () => {
   console.log(await window.title());
   console.log(window.url());
 
-  const note = await window.getByText("Test 123")
-  await expect(note).toBeDefined()
-  console.log(note)
+  // const note = await window.getByText("Test 123")
+  // await expect(note).toBeDefined()
+  // console.log(note)
   // // Expect a title "to contain" a substring.
   // await expect(page).toHaveTitle(/Playwright/);
   // require('electron').ipcRenderer.send('new-window')
 
-  //await window.goto('obsidian://vault/Test Vault')
+  await window.goto('obsidian://vault/Test Vault') // Does not work
   // await page.evaluate(() => {
   //   // eslint-disable-next-line @typescript-eslint/no-var-requires
   //   require('electron').ipcRenderer.send('new-window')
